@@ -12,6 +12,7 @@ html, body{
 	top: 1em;
 	left: 1em;
 	opacity: 0.3;
+	padding-bottom: 10em;
 	transition: all .3s;
 }
 #path-model:hover{
@@ -49,9 +50,13 @@ a:hover{
 	color: #fff;
 	text-decoration: none;
 	padding: 1em 2em;
+	margin-right: 0.2em;
+	opacity: 0.8;
 	transition: all .3s;
 }
 .button:hover{
+	opacity: 1;
+	text-decoration: none;
 	color: #fff;
 	transform: scale(1.1,1.1);
 }
