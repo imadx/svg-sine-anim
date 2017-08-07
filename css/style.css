@@ -1,0 +1,62 @@
+html, body{
+	font-family: 'Roboto','Open Sans', sans-serif;
+	overflow: hidden;
+	margin: 0;
+}
+#artwork{
+	width: 100vw;
+	height: 100vh;
+}
+#path-model{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	opacity: 0.3;
+	transition: all .3s;
+}
+#path-model:hover{
+	opacity: 0.8;
+}
+#path-model h1{
+	margin-bottom: 0;
+}
+#path-model input{
+	padding: 1em;
+	margin-bottom: 0.4em; 
+}
+#path-model input.long{
+	width: 50vw;
+}
+a{
+	color: #07f;
+	text-decoration: none;
+}
+a:hover{
+	color: #07f;
+	text-decoration: underline;
+}
+.small-block{
+	display: block;
+	font-size: 0.8em;
+}
+.label{
+	text-transform: uppercase;
+	opacity: 0.8;
+	font-size: 0.8em;
+}
+.button{
+	background: #07f;
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	transition: all .3s;
+}
+.button:hover{
+	color: #fff;
+	transform: scale(1.1,1.1);
+}
+.clearfix::before{
+	clear: both;
+	display: block;
+	content: '';
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG path animation by Ishan Madhusanka</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+	<meta name="description" content="An SVG path animation of a sine wave propogation using Javascript designed and coded by Ishan Madhusanka">
+	<meta name="keywords" content="ishan, madhusanka, full stack developer, ui, ux, computer engineer, svg, path, sine, wave, animation, javascript">
+	<meta name="author" content="Ishan Madhusanka">
+	<link rel="apple-touch-icon" sizes="57x57" href="http://imadx.github.io/img/assets/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="http://imadx.github.io/img/assets/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://imadx.github.io/img/assets/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="http://imadx.github.io/img/assets/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://imadx.github.io/img/assets/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://imadx.github.io/img/assets/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://imadx.github.io/img/assets/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="http://imadx.github.io/img/assets/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="http://imadx.github.io/img/assets/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="http://imadx.github.io/img/assets/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="http://imadx.github.io/img/assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="http://imadx.github.io/img/assets/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="http://imadx.github.io/img/assets/favicon-16x16.png">
+	<link rel="manifest" href="http://imadx.github.io/img/assets/manifest.json">
+	<meta property="og:url" content="http://imadx.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Ishan Madhusanka" />
+	<meta property="og:description" content="I'm a full stack developer + a UI/UX enthusiast. I love what I am." />
+	<meta property="og:image" content="http://imadx.github.io/img/assets/promo.png" />
+	<meta property="og:image" content="http://imadx.github.io/img/assets/logo.png" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/img/assets/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+	
+</style>
+<body>
+<div id="app">
+
+	<svg id="artwork">
+		<path id="path" :d="path" stroke="#07f" stroke-width="4" fill="transparent"></path>
+	</svg>
+	<div id="path-model">
+		<h1>SVG path - sine wave (approximated) animation <a class="small-block" href="https://github.com/imadx">by Ishan Madhusanka</a></h1>
+		<p>This animation uses Vue.js for the ease of binding and redrawing SVG path elements.<br>Otherwise everthing can be recreated using VanillaJS and pure CSS</p>
+		<label> <span class="label">SVG Path equation</span><br>
+			<input class="long" type="text" v-model="path"><br>
+		</label>
+		<label> <span class="label">Wavelength</span><br>
+			<input type="number" v-model="wavelength"><br>
+		</label>
+		<label> <span class="label">Frequency</span><br>
+			<input type="number" v-model="frequency"><br>
+		</label>
+
+		<br>
+		<a href="http://www.imadhusanka.me" class="button" title="View my resume online" target="_blank" class="button">View my Resume</a>
+	</div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
